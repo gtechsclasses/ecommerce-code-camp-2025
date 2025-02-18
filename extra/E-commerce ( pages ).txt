@@ -1,0 +1,23 @@
+E-commerce ( pages )
+
+01. Home page
+02. Sign up page
+03. Log in page
+04. All Product page ( filter )
+05. Single Product page
+06. Cart page
+07. Wishlist page
+08. Check out page - address, payment gateway
+09. Account page 
+10. About page
+11. Contact Us
+
+
+
+
+
+
+
+
+
+
