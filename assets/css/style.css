@@ -1,0 +1,37 @@
+.topbar {
+    height: 50px;
+    width: 100%;
+}
+
+.navbar .navMenu a {
+    text-decoration: none;
+    color: black;
+}
+
+.navAction .searchBar {
+    background-color: rgba(217, 217, 217, 0.794);
+}
+
+.navAction .searchBar input {
+    outline: none;
+    background-color: transparent;
+
+    border: none;
+}
+
+
+.box1{
+    height: 500px;
+    width: 900px;
+    background-color: teal;
+}
+
+.hero ul{
+    text-decoration: none;
+    list-style: none;
+}
+
+.hero ul li a{
+    text-decoration: none;
+    color: black;
+}
