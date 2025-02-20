@@ -1,8 +1,10 @@
+/* topbar css */
 .topbar {
     height: 50px;
     width: 100%;
 }
 
+/* navbar css */
 .navbar .navMenu a {
     text-decoration: none;
     color: black;
@@ -19,13 +21,7 @@
     border: none;
 }
 
-
-.box1{
-    height: 500px;
-    width: 900px;
-    background-color: teal;
-}
-
+/* hero css */
 .hero ul{
     text-decoration: none;
     list-style: none;
@@ -34,4 +30,62 @@
 .hero ul li a{
     text-decoration: none;
     color: black;
+}
+
+.redBox{
+    height: 45px;
+    width: 20px;
+}
+
+.dayBox, .hoursBox, .minutesBox, .secondBox{
+    /* height: 100px; */
+    width: 100px;
+}
+
+.carouselButton{
+    height: 50px;
+    width: 50px;
+}
+
+.product{
+    height: 400px;
+    width: 300px;
+}
+
+.product .productHead{
+    height: 80%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.product .productImg{
+    height: 100%;
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+.offer{
+    font-size: 18px;
+    top: 10px;
+    left: 10px;
+}
+
+.wishlistBtn{
+    height: 50px;
+    width: 50px;
+    top: 10px;
+    right: 10px;
+}
+
+.addToCartBtn{
+    width: 100%;
+    position: absolute;
+    bottom: -50px;
+    opacity: 0;
+    transition: all ease 0.3s;
+}
+
+.product .productHead:hover .addToCartBtn{
+    bottom: 0px;
+    opacity: 1;
 }
