@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time</title>
+</head>
+
+<body>
+
+
+    <p>Days : <span id="day">00</span></p>
+    <p>Hours : <span id="hr">00</span></p>
+    <p>Minutes : <span id="min">00</span></p>
+    <p>Seconds : <span id="sec">00</span></p>
+
+</body>
+
+<!-- complex way -->
+<!-- <script>
+
+    let offerEndDate = new Date("March 2, 2025 23:59:59").getTime();
+    function updateCountdown() {
+        let now = new Date().getTime();
+        let timeLeft = offerEndDate - now;
+
+        if (timeLeft > 0) {
+            let days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+            let hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            let minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+            let seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+            document.getElementById("day").textContent = days;
+            document.getElementById("hr").textContent = hours;
+            document.getElementById("min").textContent = minutes;
+            document.getElementById("sec").textContent = seconds;
+        } else {
+            document.body.innerHTML = "<h2>Offer Expired!</h2>";
+            clearInterval(countdown);
+        }
+    }
+    let countdown = setInterval(updateCountdown, 1000);
+
+    // Run once on page load
+    updateCountdown();
+
+
+</script> -->
+
+<!-- moment js  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+
+<script>
+    function updateCountdown() {
+        let endTime = moment("2025-02-10 23:59:59");
+        let now = moment();
+        let duration = moment.duration(endTime.diff(now));
+        if (duration > 0) {
+            document.getElementById("day").textContent = duration.days();
+            document.getElementById("hr").textContent = duration.hours();
+            document.getElementById("min").textContent = duration.minutes();
+            document.getElementById("sec").textContent = duration.seconds();
+            console.log("h")
+        } else {
+            document.body.innerHTML = "<h2>Offer Expired!</h2>";
+            clearInterval(countdownInterval)
+            console.log("h2")
+        }
+    }
+
+    var countdownInterval = setInterval(updateCountdown, 1000);
+
+    updateCountdown();
+</script>
+
+<!-- fast way -->
+<!-- <script>
+    let endTime = new Date("March 10, 2025 23:59:59").getTime();
+
+    let countdown = setInterval(() => {
+        let now = new Date().getTime();
+        let timeLeft = endTime - now;
+
+        if (timeLeft <= 0) {
+            document.body.innerHTML = "<h2>Offer Expired!</h2>";
+            clearInterval(countdown); 
+            return;
+        }
+
+        let formattedTime = new Date(timeLeft).toISOString().slice(11, 19).split(":");
+
+        document.getElementById("day").textContent = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+        document.getElementById("hr").textContent = formattedTime[0];
+        document.getElementById("min").textContent = formattedTime[1];
+        document.getElementById("sec").textContent = formattedTime[2];
+
+    }, 1000);
+</script> -->
+
+
+
+</html>
