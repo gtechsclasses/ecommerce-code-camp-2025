@@ -9,6 +9,8 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- this is bootstrap icon css linking -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- this is owl carousel css -->
+    <link rel="stylesheet" href="assets/dist/assets/owl.carousel.min.css">
     <!-- this is main css linking -->
     <link rel="stylesheet" href="assets/css/style.css">
     <title>E-commerce | G-techs</title>
@@ -82,54 +84,145 @@
             <div class="counTimer d-flex gap-3">
                 <div class="dayBox d-flex flex-column align-items-center justify-content-center">
                     <span>Days</span>
-                    <span class="fs-1 fw-bold">03</span>
+                    <span class="fs-1 fw-bold" id="leftOfferDay">00</span>
                 </div>
                 <span class="fs-1 fw-bold text-danger flex-end align-self-end" id="test">:</span>
                 <div class="hoursBox d-flex flex-column align-items-center justify-content-center">
                     <span>Hours</span>
-                    <span class="fs-1 fw-bold">23</span>
+                    <span class="fs-1 fw-bold" id="leftOfferHours">00</span>
                 </div>
                 <span class="fs-1 fw-bold text-danger flex-end align-self-end" id="test">:</span>
                 <div class="minutesBox d-flex flex-column align-items-center justify-content-center">
                     <span>Minutes</span>
-                    <span class="fs-1 fw-bold">19</span>
+                    <span class="fs-1 fw-bold" id="leftOfferMinutes">00</span>
                 </div>
                 <span class="fs-1 fw-bold text-danger flex-end align-self-end" id="test">:</span>
                 <div class="secondBox d-flex flex-column align-items-center justify-content-center">
                     <span>Seconds</span>
-                    <span class="fs-1 fw-bold">26</span>
+                    <span class="fs-1 fw-bold" id="leftOfferSeconds">00</span>
                 </div>
             </div>
 
             <div class="carouselButtons d-flex gap-3">
-                <div
-                    class="carouselButton border border-dark rounded-circle d-flex align-items-center justify-content-center">
-                    <i class="bi bi-arrow-left"></i></div>
-                <div
-                    class="carouselButton border border-dark rounded-circle d-flex align-items-center justify-content-center">
-                    <i class="bi bi-arrow-right"></i></div>
+                <div class="carouselButton border border-dark rounded-circle d-flex align-items-center justify-content-center"
+                    id="prevBtn">
+                    <i class="bi bi-arrow-left"></i>
+                </div>
+                <div class="carouselButton border border-dark rounded-circle d-flex align-items-center justify-content-center"
+                    id="nextBtn">
+                    <i class="bi bi-arrow-right"></i>
+                </div>
             </div>
         </div>
 
-        <div class="product">
-            <div class="productHead position-relative rounded">
-                <div class="productImg d-flex align-items-center justify-content-center">
-                    <img src="assets/images/products/game control.png" alt="">
-                </div>
-                <span class="offer px-2 py-1 bg-danger rounded position-absolute text-light">
-                    -40%
-                </span>
-                <span class="wishlistBtn rounded-circle bg-light position-absolute d-flex align-items-center justify-content-center"><i class="bi bi-heart fs-4"></i></span>
-                <div class="addToCartBtn bg-dark text-light py-2 fw-blod text-center">
-                    Add to Cart
-                </div>
-            </div>
-            <div class="productContent p-3">
-                <h5>HAVIT HV-G92 Gamepad</h5>
-                <div><span class="text-danger fw-bold">$120</span> &nbsp; <strike>$160</strike></div>
-            </div>
-        </div>
+        <div class="owl-carousel products-card mt-3">
 
+            <div class="product">
+                <div class="productHead position-relative rounded">
+                    <div class="productImg d-flex align-items-center justify-content-center">
+                        <img src="assets/images/products/game control.png" alt="">
+                    </div>
+                    <span class="offer px-2 py-1 bg-danger rounded position-absolute text-light">
+                        -40%
+                    </span>
+                    <span
+                        class="wishlistBtn rounded-circle bg-light position-absolute d-flex align-items-center justify-content-center"><i
+                            class="bi bi-heart fs-4"></i></span>
+                    <div class="addToCartBtn bg-dark text-light py-2 fw-blod text-center">
+                        Add to Cart
+                    </div>
+                </div>
+                <div class="productContent p-3">
+                    <h5>HAVIT HV-G92 Gamepad</h5>
+                    <div><span class="text-danger fw-bold">$120</span> &nbsp; <strike>$160</strike></div>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="productHead position-relative rounded">
+                    <div class="productImg d-flex align-items-center justify-content-center">
+                        <img src="assets/images/products/game control.png" alt="">
+                    </div>
+                    <span class="offer px-2 py-1 bg-danger rounded position-absolute text-light">
+                        -40%
+                    </span>
+                    <span
+                        class="wishlistBtn rounded-circle bg-light position-absolute d-flex align-items-center justify-content-center"><i
+                            class="bi bi-heart fs-4"></i></span>
+                    <div class="addToCartBtn bg-dark text-light py-2 fw-blod text-center">
+                        Add to Cart
+                    </div>
+                </div>
+                <div class="productContent p-3">
+                    <h5>HAVIT HV-G92 Gamepad</h5>
+                    <div><span class="text-danger fw-bold">$120</span> &nbsp; <strike>$160</strike></div>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="productHead position-relative rounded">
+                    <div class="productImg d-flex align-items-center justify-content-center">
+                        <img src="assets/images/products/game control.png" alt="">
+                    </div>
+                    <span class="offer px-2 py-1 bg-danger rounded position-absolute text-light">
+                        -40%
+                    </span>
+                    <span
+                        class="wishlistBtn rounded-circle bg-light position-absolute d-flex align-items-center justify-content-center"><i
+                            class="bi bi-heart fs-4"></i></span>
+                    <div class="addToCartBtn bg-dark text-light py-2 fw-blod text-center">
+                        Add to Cart
+                    </div>
+                </div>
+                <div class="productContent p-3">
+                    <h5>HAVIT HV-G92 Gamepad</h5>
+                    <div><span class="text-danger fw-bold">$120</span> &nbsp; <strike>$160</strike></div>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="productHead position-relative rounded">
+                    <div class="productImg d-flex align-items-center justify-content-center">
+                        <img src="assets/images/products/game control.png" alt="">
+                    </div>
+                    <span class="offer px-2 py-1 bg-danger rounded position-absolute text-light">
+                        -40%
+                    </span>
+                    <span
+                        class="wishlistBtn rounded-circle bg-light position-absolute d-flex align-items-center justify-content-center"><i
+                            class="bi bi-heart fs-4"></i></span>
+                    <div class="addToCartBtn bg-dark text-light py-2 fw-blod text-center">
+                        Add to Cart
+                    </div>
+                </div>
+                <div class="productContent p-3">
+                    <h5>HAVIT HV-G92 Gamepad</h5>
+                    <div><span class="text-danger fw-bold">$120</span> &nbsp; <strike>$160</strike></div>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="productHead position-relative rounded">
+                    <div class="productImg d-flex align-items-center justify-content-center">
+                        <img src="assets/images/products/game control.png" alt="">
+                    </div>
+                    <span class="offer px-2 py-1 bg-danger rounded position-absolute text-light">
+                        -40%
+                    </span>
+                    <span
+                        class="wishlistBtn rounded-circle bg-light position-absolute d-flex align-items-center justify-content-center"><i
+                            class="bi bi-heart fs-4"></i></span>
+                    <div class="addToCartBtn bg-dark text-light py-2 fw-blod text-center">
+                        Add to Cart
+                    </div>
+                </div>
+                <div class="productContent p-3">
+                    <h5>HAVIT HV-G92 Gamepad</h5>
+                    <div><span class="text-danger fw-bold">$120</span> &nbsp; <strike>$160</strike></div>
+                </div>
+            </div>
+
+        </div>
 
     </div>
 
@@ -183,8 +276,22 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+    <!-- this is jquery linking -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- moment js link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"
+        referrerpolicy="no-referrer"></script>
+
+    <!-- owl carousel -->
+    <script src="assets/dist/owl.carousel.js"></script>
+
     <!-- this is main js linking -->
     <script src="assets/js/script.js"></script>
+
 </body>
 
 </html>
