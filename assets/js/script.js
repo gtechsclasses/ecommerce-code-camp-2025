@@ -35,6 +35,40 @@ var countdownInterval = setInterval(() => {
 // carousel code
 
 var owl = $('.owl-carousel').owlCarousel({
+    loop: false,
+    margin: 10,
+    responsiveClass: true,
+    responsive: {
+        0: {
+            items: 1,
+            nav: false,
+            loop: true
+        },
+        600: {
+            items: 2,
+            nav: false,
+            loop: true
+        },
+        1000: {
+            items: 5,
+            nav: false,
+            loop: true
+        }
+    }
+})
+
+$("#nextBtn").click(function () {
+    owl.trigger('next.owl.carousel')
+})
+
+$("#prevBtn").click(function () {
+    owl.trigger('prev.owl.carousel')
+})
+
+
+// carousel for category
+
+var owl_category = $('.owl-carousel-category').owlCarousel({
     loop: true,
     margin: 10,
     responsiveClass: true,
@@ -50,17 +84,26 @@ var owl = $('.owl-carousel').owlCarousel({
             loop: true
         },
         1000: {
-            items: 4,
+            items: 5,
             nav: false,
             loop: true
         }
     }
 })
 
-$("#nextBtn").click(function () {
+
+$("#nextCategoryBtn").click(function () {
     owl.trigger('next.owl.carousel')
 })
 
-$("#prevBtn").click(function () {
+$("#prevCategoryBtn").click(function () {
+    owl.trigger('prev.owl.carousel')
+})
+
+$("#nextExploreBtn").click(function () {
+    owl.trigger('next.owl.carousel')
+})
+
+$("#prevExploreBtn").click(function () {
     owl.trigger('prev.owl.carousel')
 })

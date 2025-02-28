@@ -52,8 +52,10 @@
 
 
 .product {
-    height: 400px;
-    width: 300px;
+    height: 350px;
+    width: 260px;
+    padding: 10px;
+    /* border: 1px solid red; */
 }
 
 .product .productHead {
@@ -92,4 +94,42 @@
 .product .productHead:hover .addToCartBtn {
     bottom: 0px;
     opacity: 1;
+}
+
+.carouselButton{
+    cursor: pointer;
+    transition: all ease 0.2s;
+}
+
+.carouselButton:hover{
+    background-color: black;
+    color: white;
+}
+
+.viewAllBtn{
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+.category {
+    /* height: 300px; */
+    width: 250px;
+    padding: 10px;
+    /* border: 1px solid red; */
+    transition: all ease 0.3s;
+}
+
+.category .productHead {
+    height: 80%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.category i{
+    font-size: 100px;
+}
+
+.category:hover{
+    background-color: rgb(219 68 68);
+    color: white;
 }

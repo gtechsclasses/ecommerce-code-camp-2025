@@ -1,6 +1,6 @@
 E-commerce ( pages )
 
-01. Home page
+01. Home page ✅
 02. Sign up page
 03. Log in page
 04. All Product page ( filter )
